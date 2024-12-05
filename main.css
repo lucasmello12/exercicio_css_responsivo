@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #db57db;
+    color: #fff;
+    padding: 1em 0;
+}
+
+h1:hover {
+    cursor: default;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1.25em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding-top: 2em;
+    display: flex;
+}
+
+section h2 {
+    border-bottom: 2px solid #db57db;
+    margin-bottom: 1em;
+}
+
+.div-sobre {
+    display: block;
+    margin-left: 1em;
+}
+
+.div-sobre p {
+    font-size: 1.5em;
+}
+
+#produtos{
+    display: block;
+    margin-bottom: 2em;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.produtos img {
+    width: 100%;
+}
+
+.produto {
+    display: block;
+    text-align: center;
+}
+
+button {
+    padding: 1em;
+    background-color: #db57db;
+    color: #fff;
+    border: none;
+    width: 90%;
+}
+
+span {
+    font-weight: bold;
+    width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    header .container {
+        margin-left: 10px;
+        display: block;
+        justify-content: space-between;
+    }
+
+    .container {
+        max-width: 25em;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .produto {
+        display: block;
+        margin-bottom: 3em;
+    }
+
+    span {
+        display: block;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+
+    #sobre, #produtos {
+        display: block;
+        text-align: center;
+    }
+
+    #sobre p{
+        text-align: justify;
+    }
+
+    #sobre img {
+        max-width: 90%;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    header .container {
+        margin-left: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container {
+        max-width: 45em;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #sobre, #produtos {
+        display: block;
+        text-align: center;
+    }
+
+    #sobre p{
+        text-align: justify;
+    }
+
+    #sobre img {
+        max-width: 100%;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .produto {
+        margin-bottom: 3em;
+    }
+
+}
